@@ -20,14 +20,14 @@ body {
     align-items: center;
     background: url('./donald.gif');
     background-size: contain;
-    background-position: left center;
+    background-position: 10% 25% ;
     background-repeat: no-repeat;
     background-size: 25%;
-    margin-left: 60px;
 }
 
-p {
+h1 {
    font-family: 'Josefin Sans', sans-serif; 
+   color: rgb(24, 24, 24);
 }
 
 button {
