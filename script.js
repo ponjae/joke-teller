@@ -19,4 +19,19 @@ function test() {
     });
 }
 
-test()
+// Get jokes from Joke API
+
+async function getJokes() {
+    let joke = '';
+    try {
+        const response = await fetch('https://v2.jokeapi.dev/joke/Any');
+        const data = await response.json();
+        if (data.setup) { // Check if it is a two part joke
+            joke = `${data.setup} ... ${data.delivery}`;
+        } else {
+            joke = data.joke;
+        }
+    } catch (error) {
+        console.log('Whoops', error)
+    }
+}
