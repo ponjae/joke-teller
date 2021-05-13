@@ -29,3 +29,42 @@ body {
 p {
    font-family: 'Josefin Sans', sans-serif; 
 }
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    color: #020102;
+    background: linear-gradient(to top, #e9b3d9, #7781eb);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0, 0.6);
+}    
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:disabled {
+    cursor: default;
+    filter: brightness(30%);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+    .container {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    button {
+        box-shadow: 5px 5px 30px 20px rgba(255, 255, 255, 0.6);
+    }
+}
